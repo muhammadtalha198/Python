@@ -11,6 +11,7 @@ def read_root():
 @app.get("/port-data")
 def get_port_data():
     try:
+        url:""
         response = requests.get(url, timeout=30)
         response.raise_for_status()
 
